@@ -39,7 +39,7 @@ const Hero = () => {
 
           </div>
 
-          <div className="py-8 flex gap-4">
+          <div className="py-8 flex flex-wrap gap-4">
             <div className="border-r-2 border-gray-600 pr-10 ">
                 <h2 className="text-primary font-extrabold text-[24px] font-primary">5+</h2>
                 <h3 className="text-[20px] font-bold ">Experiences</h3>
