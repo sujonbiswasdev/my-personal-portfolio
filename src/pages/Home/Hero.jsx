@@ -39,7 +39,7 @@ const Hero = () => {
 
           </div>
 
-          <div className="py-8 flex flex-wrap gap-4">
+          <div className="py-8 flex flex-col justify-center items-center md:flex-row gap-4">
             <div className="border-r-2 border-gray-600 pr-10 ">
                 <h2 className="text-primary font-extrabold text-[24px] font-primary">5+</h2>
                 <h3 className="text-[20px] font-bold ">Experiences</h3>
@@ -50,7 +50,7 @@ const Hero = () => {
                 <h3 className="text-[20px] font-bold w-[150px]">Project done</h3>
 
             </div>
-            <div className="border-r-2 border-gray-600 pr-8 ">
+            <div className="border-r-2 border-gray-600 pr-1">
                 <h2 className="text-primary font-extrabold text-[24px] font-primary">80+</h2>
                 <h3 className="text-[20px] font-bold w-[150px] ">Happy Clients</h3>
 
