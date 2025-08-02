@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from '../pages/Home/Home';
 import Navbar from '../layouts/Navbar/Navbar';
+import Service from '../pages/services/Service';
 const Index = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Index = () => {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/Services' element={<Service/>} />
     </Routes>
     </BrowserRouter>
     </>

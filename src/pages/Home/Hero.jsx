@@ -19,6 +19,8 @@ const Hero = () => {
       typed.destroy();
     };
   }, []);
+  
+
   return (
     <Container className="px-[40px] md:px-[60px] py-[20px] md:py-[60px]">
       <div className="flex flex-col justify-around items-center md:flex-row ">
@@ -33,7 +35,7 @@ const Hero = () => {
 
           <div className="py-14 flex gap-5">
             <Button className="bg-[#FD6F00] text-white font-bold font-primary text-[20px] py-3 px-10 ">Hire Me</Button>
-            <Button variant="bordered" className="text-white">Downlead CV </Button>
+            <Button variant="bordered" className="text-white" > <a href="/images/HeroImg.png" download>Downlead CV</a> </Button>
 
           </div>
 

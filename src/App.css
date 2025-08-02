@@ -31,3 +31,7 @@
 .navitem:hover::after{
     width: 100%;
 }
+
+.active{
+    color:#9EFF00;
+}
