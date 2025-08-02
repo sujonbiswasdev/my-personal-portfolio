@@ -1,0 +1,33 @@
+
+/* custom scrollbar */
+::-webkit-scrollbar{
+    width: 6px;
+    z-index: 10;
+}
+::-webkit-scrollbar-track{
+ background:linear-gradient(to bottom,black ,blueviolet);
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(to bottom, #9EFF00 ,rgb(73, 73, 73));
+    border-radius: 10px;
+   
+}
+.navitem{
+    position: relative;
+    width: 100%;
+    display: inline;
+}
+.navitem::after{
+        content: '';
+        position: absolute;
+        width:0%;
+        height: 2px;
+        display: flex;
+        bottom: -10px;
+        background-color:#9EFF00;
+        transition: all 0.3s linear;
+    
+}
+.navitem:hover::after{
+    width: 100%;
+}
