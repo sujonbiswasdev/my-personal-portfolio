@@ -6,7 +6,7 @@ import { AiOutlineBars } from "react-icons/ai";
 import { IoIosCloseCircle } from "react-icons/io";
 import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
-import Response from "./Response";
+import Responsive from "./Responsive";
 import { NavLink } from "react-router";
 import Signup from "../../pages/Accounts/Signup";
 import Mymodal from "../../pages/Accounts/Mymodal";
@@ -71,7 +71,7 @@ const Navbar = () => {
          
         </div>
       </nav>
-      <Response isOpen={isOpen} setisOpen={setisOpen} NavItems={NavItems} setNavitems={setNavitems}/>
+      <Responsive isOpen={isOpen} setisOpen={setisOpen} NavItems={NavItems} setNavitems={setNavitems}/>
     </Container>
     </div>
   );

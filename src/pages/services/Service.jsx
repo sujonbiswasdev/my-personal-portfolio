@@ -1,8 +1,42 @@
-import React from 'react'
-
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
+import Container from '../../components/Container'
 const Service = () => {
+  const [SVData,setSvdata]=useState([])
+  useEffect(()=>{
+    axios.get('/data/Service.json')
+     .then((response)=>{
+      setSvdata(response.data)
+     })
+  },[])
+  console.log(SVData)
   return (
-    <div>Service</div>
+    <>
+    <Container className="pt-[150px]">
+
+      <div className='text-center space-y-2'>
+        <h2 className='text-[30px] lg:text-[40px] text-white'>Services</h2>
+        <p className='text-grayText text-[20px]'>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
+      </div>
+
+      <div className='grid grid-cols-2 lg:grid-cols-3 space-x-10 space-y-10 items-center pt-[80px]'>
+        {
+          SVData.flatMap((item)=>{
+            return <div key={item.id} className='bg-[#10061f] rounded-xl p-8'>
+              <div className='flex flex-col justify-center items-center gap-4'>
+                <img src={item.img} alt="" />
+                <div className='flex flex-col gap-8'>
+                  <h2 className='font-bold text-primary font-primary text-[24px] text-center'>{item.Heading}</h2>
+                  <p className='max-w-[339px] text-center  fomt-primary font-medium text-secoundary leading-[150%]'>{item.des}</p>
+                </div>
+              </div>
+            </div>
+          })
+        }
+      </div>
+
+    </Container>
+    </>
   )
 }
 

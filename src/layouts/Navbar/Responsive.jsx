@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@heroui/react";
-const Response = ({ isOpen, setisOpen, NavItems, setNavitems }) => {
-  console.log(NavItems);
+const Responsive = ({ isOpen, setisOpen, NavItems, setNavitems }) => {
   return (
     <div className="">
       {isOpen && (
@@ -40,4 +39,4 @@ const Response = ({ isOpen, setisOpen, NavItems, setNavitems }) => {
   );
 };
 
-export default Response;
+export default Responsive;
