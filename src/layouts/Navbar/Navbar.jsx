@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="hidden md:flex md:gap-[20px] lg:gap-[40px]">
           {NavItems.flatMap((items,index) => (
             <ul key={index}>
-              <NavLink to={items.item==='Home'?"/":items.item} >
+              <NavLink className="navitem" to={items.item==='Home'?"/":items.item} >
                 {items.item}
               </NavLink>
             </ul>

@@ -1,0 +1,7 @@
+[
+    {"id":1,"icon":"/images/figma.png","percentage":"100%","name":"Figma"},
+    {"id":2,"icon":"/images/adobe-xd.png","percentage":"100%","name":"Adobe Xd"},
+    {"id":3,"icon":"/images/adobe-photoshop.png","percentage":"100%","name":"Adobe Photoshop"},
+    {"id":4,"icon":"/images/adobe-illastrator.png","percentage":"100%","name":"Adobe Illustrator"},
+    {"id":5,"icon":"/images/adobe-primiarpro.png","percentage":"100%","name":"Adobe Primiarpro"}
+]
