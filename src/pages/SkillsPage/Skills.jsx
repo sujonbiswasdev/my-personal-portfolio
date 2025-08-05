@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from 'react'
 import Container from '../../components/Container'
 import axios from 'axios'
+import PieChart from './Pie'
 
 const Skills = () => {
-    const [skilldata,setskilldata]=useState([])
-    useEffect(()=>{
-        axios.get('/data/Skills.json')
-          .then((response)=>{
-            setskilldata(response.data)
-          }) 
-},[])
-  
+ const [skilldata, setskilldata] = useState([]);
+     useEffect(() => {
+       axios.get("/data/Skills.json").then((response) => {
+         setskilldata(response.data);
+       });
+     }, []);
+     console.log(skilldata)
   return (
-    <Container className="py-16 h-screen px-[80px] mx-auto ">
+    <Container className="py-16 min-h-screen px-[80px] mx-auto ">
         <div>
             <h1 className='text-center text-white font-bold text-[40px] font-primary'>My Recent Skills</h1>
 
-            <div className='pt-[70px]'>
-                <div className='grid grid-cols-4 space-y-20'>
-                  {skilldata.map((items)=>(
-                    <div key={items.id} className='space-y-1'>
-                      <img src={items.icon} alt="" />
-                      <h2 className='text-[30px] text-primary font-bold'>{items.percentage}</h2>
-                      <h3 className='text-secoundary font-medium'>{items.name}</h3>
-                    </div>
-                  ))}
+            <div className='pt-[70px] flex flex-col justify-center items-center'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-2 sm:space-x-20'>
+                       {skilldata.map((item,index)=>{
+                        return <div key={index}>
+                          <PieChart percentage={item.percentage} per={item.percentage} img={item.icon}>
+                          </PieChart>
+                        </div>
+                       })}
                 </div>
+                
             </div>
         </div>
     </Container>
