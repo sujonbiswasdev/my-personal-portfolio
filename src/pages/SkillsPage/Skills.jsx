@@ -12,14 +12,14 @@ const Skills = () => {
      }, []);
      console.log(skilldata)
   return (
-    <Container className="py-16 min-h-screen px-[80px] mx-auto ">
+    <Container className="py-16 min-h-screen px-[80px]  mx-auto ">
         <div>
             <h1 className='text-center text-white font-bold text-[40px] font-primary'>My Recent Skills</h1>
 
             <div className='pt-[70px] flex flex-col justify-center items-center'>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-y-2 sm:space-x-20'>
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 space-x-20'>
                        {skilldata.map((item,index)=>{
-                        return <div key={index}>
+                        return <div key={index} className=''>
                           <PieChart percentage={item.percentage} per={item.percentage} img={item.icon}>
                           </PieChart>
                         </div>
