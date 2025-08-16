@@ -1,20 +1,72 @@
-import React from 'react'
-import Container from '../../components/Container'
-import { ThemeProvider } from '../../hooks/contexts/ThemeProvider'
+import React, { useState } from "react";
+import Container from "../../components/Container";
+import { ThemeProvider } from "../../hooks/contexts/ThemeProvider";
+import WorkButton from "../../assets/svg/WorkButton";
+import { Link } from "react-router";
 
+const workData = [
+  {
+    id: 1,
+    item: "All",
+  },
+  {
+    id: 2,
+    item: "Website design",
+  },
+  {
+    id: 3,
+    item: "App mobile design",
+  },
+  {
+    id: 4,
+    item: "App desktop",
+  },
+  {
+    id: 5,
+    item: "Braiding",
+  },
+];
 const Portfolio = () => {
+  const [currentindex,setCurrentIndex] = useState(0)
+  const indexFind = (index)=>{
+    setCurrentIndex(index)
+  }
   return (
-    <Container >
+    <Container className="min-h-screen">
       <ThemeProvider>
-          <div className=''>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A enim quidem quasi tenetur non, animi aut voluptatum illo totam autem provident consequatur doloribus minima, aliquam nisi iusto error pariatur delectus vitae alias dolorem praesentium aperiam. Nemo porro corrupti quae soluta harum adipisci perferendis vero non quisquam quidem nisi, similique quaerat dicta eaque consequuntur cumque expedita iure ut reiciendis voluptate? Porro natus omnis ex quod sapiente neque tempore modi. Molestiae harum quis sapiente neque est ratione pariatur ex nemo dolores perspiciatis doloribus ut architecto, tempore possimus quia commodi id facere, nostrum totam! Vel illum obcaecati voluptatum fuga at nihil aperiam fugiat officiis, consequuntur praesentium ut, placeat veritatis consequatur porro, omnis laborum excepturi sapiente odit perspiciatis quis eum magnam officia autem. Quam accusantium impedit quaerat suscipit cumque atque vero, id exercitationem libero quo asperiores ut illo excepturi aspernatur laboriosam in voluptate quia, blanditiis necessitatibus quae repellat molestiae nobis sapiente soluta? Nostrum reiciendis similique inventore doloremque minima repellat eaque illum obcaecati nulla maxime corrupti accusantium, tempora, rerum nesciunt delectus dolorem libero! Nobis voluptatem corporis similique nam provident quaerat accusamus sunt laborum debitis accusantium. Fugit eaque libero sapiente numquam magnam eum adipisci reiciendis dignissimos deleniti soluta repellendus non laboriosam ea, consequuntur et explicabo reprehenderit obcaecati, nihil itaque! Similique sapiente impedit maiores adipisci cupiditate id tempore culpa sunt non dolorum hic, laboriosam enim facere maxime distinctio voluptatibus pariatur soluta quas quae eligendi. Perferendis quo eum quibusdam sit delectus eos dolore ratione nesciunt error aperiam repellendus, atque eaque excepturi provident. Inventore obcaecati harum vero quo suscipit accusantium eligendi, animi dolor qui laudantium officiis, saepe neque? Ipsam eaque distinctio sit deserunt at, nisi nostrum perferendis delectus placeat, sed consequuntur dolorum voluptatum expedita architecto necessitatibus explicabo numquam saepe eligendi omnis facere consequatur. Ipsum esse provident pariatur, perspiciatis perferendis facilis sit fuga iste quas rerum earum sunt, cupiditate temporibus eveniet cum voluptatem nisi numquam quidem veniam quibusdam, magnam vero delectus alias reprehenderit? Labore minus molestias nemo asperiores dolorum, iusto, suscipit tempore repudiandae odit ipsam nobis sunt reprehenderit fugiat facilis eos corrupti quibusdam vitae explicabo vero incidunt expedita atque corporis voluptatibus? Nisi itaque suscipit voluptatem excepturi nesciunt voluptate assumenda ea adipisci! Sunt repellat facere optio quo eveniet ad veniam, labore illo totam modi veritatis aspernatur unde sequi nihil consectetur, quaerat dolor nam voluptates. Tempora, recusandae officia pariatur rerum distinctio alias maiores praesentium deserunt sint? Ex rem quisquam molestias, esse, modi non, veritatis tempore fugit eveniet inventore voluptas voluptate quis incidunt numquam. Iure maiores sed, molestias perspiciatis quam nemo, dolores quae porro minus inventore laboriosam rem nostrum perferendis temporibus eos corporis, maxime quasi amet ratione dolorum repellat molestiae mollitia reiciendis harum. Aliquam, debitis fuga illo quae tempora eos nihil aliquid consectetur voluptatibus harum labore? Pariatur iusto assumenda, iste, perferendis earum quisquam dolorum a, dicta placeat ea blanditiis maiores! Maxime cupiditate eos optio nemo doloribus consequuntur illum molestiae magnam repellat quis. Atque cumque sunt pariatur dicta nihil unde sapiente ratione, provident corporis labore quibusdam ea numquam sit. Placeat error minima ad ducimus enim sapiente expedita alias, numquam maiores harum. Esse, voluptas dolores!
+        <div className="pt-16 pb-3">
+          <h2 className="text-center font-bold text-[40px]">Portfolio</h2>
+          <div className="flex justify-center items-center  py-3 gap-3 ">
+            {workData.map((item,index) => (
+              <div>
+                <button onClick={()=>indexFind(index)} className={`${index===currentindex?"bg-[#FD6F00]":"bg-[#252525]"} px-6 py-3 rounded font-bold`} key={index}>
+                  {item.item}
+                </button>
+              </div>
+            ))}
+          </div>
 
-      </div>
+          <div className="py-16 px-16">
+            <div>
+              <div>
+                <div className="max-w-[500px] h-[450px] bg-[#252525] px-2 rounded-2xl overflow-hidden cursor-pointer relative"><img src="/images/Image.png" className=" w-full  hover:scale-110 transition-all duration-300 object-cover mx-auto ml-1 bg-li" alt="" />
+                <div className="flex gap-6 justify-between items-center py-4">
+                  <div className="p-6">
+                    <h2>Project name</h2>
+                  <p>description</p>
+                  <p>Technology used</p>
+                  <p>library use</p>
+                  </div>
+                  <a href="https://github.com/sujonbiswas01/chills-bay-website"><WorkButton/></a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </ThemeProvider>
-    
-        
     </Container>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

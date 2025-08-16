@@ -22,7 +22,7 @@ const Hero = () => {
   
 
   return (
-    <Container className="px-[40px] md:px-[60px] py-[20px] md:py-[60px]">
+    <Container className="px-[40px] md:px-[40px] py-[20px] md:py-[60px]">
       <div className="flex flex-col justify-around items-center md:flex-row ">
         <div className="basis-100 w-full">
           <h1 className="font-primary font-black text-[35px] md:text-[50px] leading-tight"> <span className="text-[18px] md:text-[25px]"> Hello,</span> <br /> <span className="text-[24px] md:text-[30px]">I’m Sujon</span> <br /> <span className="text-primary" ref={el}>A Product Designer</span> </h1>

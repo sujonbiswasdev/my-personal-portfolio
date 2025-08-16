@@ -3,7 +3,7 @@
     {"id":2,"icon":"../images/css.png","percentage":"90","name":"css"},
     {"id":3,"icon":"../images/js.png","percentage":"85","name":"Javascript"},
     {"id":4,"icon":"../images/reactjs.png","percentage":"90","name":"React js"},
-    {"id":5,"icon":"../images/nextjs.png","percentage":"60","name":"next js"},
+    {"id":5,"icon":"../images/next-js.png","percentage":"60","name":"next js"},
     {"id":6,"icon":"../images/sass.png","percentage":"75","name":"sass"},
     {"id":6,"icon":"../images/bootstrap.png","percentage":"80","name":"bootstrap"},
     {"id":6,"icon":"../images/tailwindpng.png","percentage":"95","name":"tailwind css"},

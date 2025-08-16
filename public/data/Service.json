@@ -1,21 +1,23 @@
 [
     {
         "id":1,
+        "img":"/images/web-developer.jpg",
+        "Heading":"website developer",
+        "des":"Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur"
+    },
+      {
+        "id":2,
         "img":"/images/webicon.png",
         "Heading":"website developer",
         "des":"Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur"
     },
     {
-        "id":2,
+        "id":3,
         "img":"/images/graphics.png",
         "Heading":"graphics design",
         "des":"Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur"
-    },
-    {
-        "id":3,
-        "img":"/images/Service-logo.png",
-        "Heading":"App Design",
-        "des":"Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur"
     }
+   
+    
     
 ]
