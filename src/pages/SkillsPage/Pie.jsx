@@ -12,7 +12,7 @@ const PieChart=({ percentage,per,img})=>{
             circumference:360,
             borderWidth:0,
             rotation:-90,
-            cutout:"60%",
+            cutout:"62%",
             hoverBackgroundColor:"#2563eb",
             animation:{
                 animateRotate:true,
@@ -35,10 +35,10 @@ const PieChart=({ percentage,per,img})=>{
     })
    },[])
     return(
-        <div className="w-[200px] relative ">
+        <div className="w-[180px] relative flex flex-c justify-center items-center">
             <Doughnut data={data} options={options}></Doughnut>
-            <img src={img}  className="absolute top-14 w-[50px] left-18 " alt="" />
-            <h2 className="absolute top-26 left-18 text-2xl md:text-3xl font-bold text-primary">{per} %</h2>
+            <img src={img}  className="absolute top-14 w-[50px] left-16 hover:-hue-rotate-45 z-30 opacity-90 hover:scale-120 hover:opacity-100 transition-all duration-200" alt="" />
+            <h2 className="absolute top-26 left-16 text-xl md:text-2xl font-bold text-primary">{per} %</h2>
           
         </div>
     )
