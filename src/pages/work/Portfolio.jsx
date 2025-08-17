@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Container from "../../components/Container";
 import { ThemeProvider } from "../../hooks/contexts/ThemeProvider";
 import WorkButton from "../../components/WorkButton";
+import { CardSkeleton } from "../../components/CardSkeleton";
+
 
 const workData = [
   {
@@ -27,6 +29,12 @@ const workData = [
 ];
 const Portfolio = () => {
   const [currentindex, setCurrentIndex] = useState(0);
+  const [isLoading,setIsLoading]=useState(false)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(true)
+    },9000)
+  })
   const indexFind = (index) => {
     setCurrentIndex(index);
   };
@@ -38,6 +46,7 @@ const Portfolio = () => {
       })
       .then((res) => setworkdata(res));
   }, []);
+  
   return (
     <Container className="min-h-screen">
       <ThemeProvider>
@@ -64,7 +73,10 @@ const Portfolio = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 px-5 md:px-20 space-y-8">
                 {workdata.flatMap((item) => {
                   return (
-                    <div
+                    
+                 <div>
+                  {isLoading?(
+                       <div
                       key={item.id}
                       className={`w-full md:max-w-[500px] pb-6 ${
                         item.length - 1 ? "h-[30px]" : "h-auto"
@@ -74,7 +86,7 @@ const Portfolio = () => {
                         src={item.img}
                         className=" w-full  hover:scale-110 transition-all duration-300 object-cover mx-auto ml-1 bg-li"
                         alt=""
-                      />
+                      /> 
                       <div className=" gap-6 justify-between items-center py-4">
                         <div className="p-6 space-y-2">
                           <h2 className="text-xl font-bold text-primary">
@@ -118,6 +130,8 @@ const Portfolio = () => {
                         <WorkButton link={item.link}>Live demo</WorkButton>
                       </div>
                     </div>
+                  ):(<div><CardSkeleton library={item.library.map((item)=>{return item})} width={item.heading} des={item.des} tech={item.technology.map((item)=>{return item})}/></div>)}
+                 </div>
                   );
                 })}
               </div>
@@ -129,4 +143,5 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+
+export default Portfolio
