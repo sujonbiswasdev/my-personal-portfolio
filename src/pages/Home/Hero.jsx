@@ -28,9 +28,9 @@ const Hero = () => {
           <h1 className="font-primary font-black text-[35px] md:text-[50px] leading-tight"> <span className="text-[18px] md:text-[25px]"> Hello,</span> <br /> <span className="text-[24px] md:text-[30px]">I’m Sujon</span> <br /> <span className="text-primary" ref={el}>A Product Designer</span> </h1>
 
           <div className="flex gap-6 pt-5">
-            <div className="text-3xl text-white border-none outline-none cursor-pointer "><FaInstagramSquare/></div>
-            <div className="text-3xl text-white border-none outline-none cursor-pointer"><FaLinkedin/></div>
-            <div className="text-3xl text-white border-none outline-none cursor-pointer"><FaFacebook/></div>
+            <a className="text-3xl text-white border-none outline-none cursor-pointer "><FaInstagramSquare/></a>
+            <a href="https://www.linkedin.com/in/sujon-biswas-934a8b37a/" className="text-3xl text-white border-none outline-none cursor-pointer"><FaLinkedin/></a>
+            <a className="text-3xl text-white border-none outline-none cursor-pointer"><FaFacebook/></a>
           </div>
 
           <div className="py-14 flex gap-5">
