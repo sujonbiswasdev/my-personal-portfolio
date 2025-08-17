@@ -7,9 +7,9 @@ const Responsive = ({ isOpen, setisOpen, NavItems, setNavitems }) => {
       {isOpen && (
         <div className="top-0 left-0 overflow-y-hidden flex backdrop-blur-3xl bg-transparent flex-col  items-center h-[100vh] relative ">
           <div className="space-y-5 py-20 ">
-            {NavItems.map((items) => {
+            {NavItems.map((items,index) => {
               return (
-                <ul className="top-0 ">
+                <ul className="top-0 " key={index}>
                   <li
                     className="cursor-pointer"
                     onClick={() => setisOpen(!isOpen)}

@@ -12,7 +12,7 @@ const Service = () => {
   console.log(SVData)
   return (
     <>
-    <Container className="pt-[10px] px-14 h-screen bg-black md:px-[80px]">
+    <Container className="pt-0 md:pt-[10px] px-14 h-screen bg-black md:px-[80px]">
       <div className='text-center space-y-2'>
         <h2 className='text-[30px] lg:text-[40px]  font-bold'>Services</h2>
         <p className='text-grayText text-[20px]'>Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>

@@ -1,0 +1,9 @@
+[
+    {"id":1,"heading":"chills bay website","des":"Find amazing things to do anytime, anywhere in Lagos","technology":["React js","tailwind css","javascript"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/chills-bay-website","img":"/images/project1.png","link":"https://chills-bay-website.vercel.app/"},
+
+    {"id":2,"heading":"disasters","des":"this is project disasters","technology":["React js","tailwind css","javascript"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/DISASTERS-I-O-website","img":"/images/project2.png","link":"https://disasters-website.vercel.app/"},
+
+    {"id":3,"heading":"May pay website","des":"this is maypay project","technology":["React js","tailwind css","next js","typescript"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/full-stack-project","img":"/images/project6.png","link":"https://full-stack-project-xvkb.vercel.app/"},
+
+    {"id":4,"heading":"Dashboard","des":"a website intarective dashboard","technology":["React js","tailwind css","chat js"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/Dashboard","img":"/images/project3.png","link":"https://dashboard-rust-tau.vercel.app/"}
+]
