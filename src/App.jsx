@@ -6,9 +6,9 @@ import { HeroUIProvider } from "@heroui/react";
 import Preloader from "./components/PreloaderPage/Preloader";
 function App() {
   const [preloader, setpreloader] = useState(true);
-  window.addEventListener("load", () => {
-    setpreloader(false);
-  });
+ window.addEventListener('load',()=>{
+  setpreloader(false);
+ })
   return (
     <>
       {preloader ? (
