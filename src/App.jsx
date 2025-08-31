@@ -7,7 +7,7 @@ import Preloader from "./components/PreloaderPage/Preloader";
 function App() {
   const [preloader, setpreloader] = useState(true);
   window.addEventListener("load", () => {
-   return setpreloader(false);
+    setpreloader(false);
   });
   return (
     <>
