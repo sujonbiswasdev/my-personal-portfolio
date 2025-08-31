@@ -9,7 +9,6 @@ const Home = () => {
     <>
      <Helmet>
         <title>sujon biswas</title>
-        <meta name="description" content="hi there,i am frontend developer,i expertise in html, css,javascript,typescript,tailwind css ,bootstrap,sass,React js ,next js,react redux if you need this serce then contact with me ,i am always help you in this here" />
          <link rel="canonical" href="http://localhost:5173/" />
       </Helmet>
       <main className="space-y-4">
