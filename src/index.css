@@ -7,6 +7,9 @@
     --font-primary:"Lato", sans-serif;
     
 }
+html{
+    scroll-behavior: smooth
+}
 
 @import "tailwindcss";
 @plugin '../hero.ts';

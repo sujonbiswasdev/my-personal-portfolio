@@ -1,11 +1,159 @@
 [
-    {"id":1,"icon":"../images/html.png","percentage":"95","name":"Html"},
-    {"id":2,"icon":"../images/css.png","percentage":"90","name":"css"},
-    {"id":3,"icon":"../images/js.png","percentage":"85","name":"Javascript"},
-    {"id":4,"icon":"../images/reactjs.png","percentage":"90","name":"React js"},
-    {"id":5,"icon":"../images/next-js.png","percentage":"60","name":"next js"},
-    {"id":6,"icon":"../images/sass.png","percentage":"75","name":"sass"},
-    {"id":6,"icon":"../images/bootstrap.png","percentage":"80","name":"bootstrap"},
-    {"id":6,"icon":"../images/tailwindpng.png","percentage":"95","name":"tailwind css"},
-    {"id":7,"icon":"../images/typescript.png","percentage":"70","name":"typescript"}
+  {
+    "title":"frontend ",
+    "color":"#581c87",
+    "skill": [
+        
+      {
+        "id": 1,
+        "icon": "../images/html.png",
+        "percentage": "95",
+        "name": "Html"
+      },
+      {
+        "id": 2,
+        "icon": "../images/css.png",
+        "percentage": "90",
+        "name": "css"
+      },
+      {
+        "id": 3,
+        "icon": "../images/js.png",
+        "percentage": "85",
+        "name": "Javascript"
+      },
+        {
+        "id": 4,
+        "icon": "../images/typescript.png",
+        "percentage": "70",
+        "name": "typescript"
+      },
+      {
+        "id": 5,
+        "icon": "../images/reactjs.png",
+        "percentage": "90",
+        "name": "React js"
+      },
+      {
+        "id": 5,
+        "icon": "../images/next-js.png",
+        "percentage": "60",
+        "name": "next js"
+      }
+    ]
+  },
+   {
+    "title":"styling",
+    "color":"#c026d3",
+    "skill": [
+        {
+        "id": 1,
+        "icon": "../images/tailwindpng.png",
+        "percentage": "95",
+        "name": "tailwind"
+        },
+        {
+        "id": 2,
+        "icon": "../images/bootstrap.png",
+        "percentage": "95",
+        "name": "bootstrap"
+        },
+        {
+        "id": 3,
+        "icon": "../images/sass.png",
+        "percentage": "95",
+        "name": "sass"
+        }
+    ]
+  },
+   {
+    "title":"tools",
+    "color":"#d97706",
+    "skill": [
+        {
+        "id": 1,
+        "icon": "../images/git.png",
+        "percentage": "95",
+        "name": "tailwind"
+        },
+        {
+        "id": 2,
+        "icon": "../images/github.png",
+        "percentage": "95",
+        "name": "github"
+        },
+        {
+        "id": 3,
+        "icon": "../images/vscode.png",
+        "percentage": "95",
+        "name": "sass"
+        },
+        {
+        "id": 4,
+        "icon": "../images/vercel.png",
+        "percentage": "95",
+        "name": "vercel"
+        },
+        {
+        "id": 5,
+        "icon": "../images/netlify.png",
+        "percentage": "95",
+        "name": "netlify"
+        },
+        {
+        "id": 6,
+        "icon": "../images/vite1.jpg",
+        "percentage": "95",
+        "name": "vite"
+        },
+        {
+        "id": 7,
+        "icon": "../images/bun.png",
+        "percentage": "95",
+        "name": "bun"
+        }
+    ]
+  },
+   {
+    "title":"UI/UX Design",
+    "color":"#15803d",
+    "skill": [
+        {
+        "id": 1,
+        "icon": "../images/figma1.png",
+        "percentage": "95",
+        "name": "figma"
+        },
+        {
+        "id": 2,
+        "icon": "../images/responsive.png",
+        "percentage": "95",
+        "name": "Responsive design"
+        },
+        {
+        "id": 3,
+        "icon": "../images/photoshop.png",
+        "percentage": "95",
+        "name": "photoshop"
+        }
+    ]
+  },
+   {
+    "title":"others",
+    "color":"#db2777",
+    "skill": [
+        {
+        "id": 1,
+        "icon": "../images/api.png",
+        "percentage": "95",
+        "name": "api integration"
+        },
+        {
+        "id": 2,
+        "icon": "../images/seo.png",
+        "percentage": "95",
+        "name": "seo friendly"
+        }
+    ]
+  }
 ]

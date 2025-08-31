@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button } from "@heroui/react";
+import { Link } from "react-router";
 const Responsive = ({ isOpen, setisOpen, NavItems, setNavitems }) => {
   return (
     <div className="">
@@ -10,12 +11,12 @@ const Responsive = ({ isOpen, setisOpen, NavItems, setNavitems }) => {
             {NavItems.map((items,index) => {
               return (
                 <ul className="top-0 " key={index}>
-                  <li
+                  <Link to={items.item==="Home"?"/":items.item}
                     className="cursor-pointer"
                     onClick={() => setisOpen(!isOpen)}
                   >
                     {items.item}
-                  </li>
+                  </Link>
                 </ul>
               );
             })}

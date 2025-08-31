@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import Typed from 'typed.js';
 import React from "react";
 import { Button } from "@heroui/react";
+
 const Hero = () => {
    const el = React.useRef(null);
    React.useEffect(() => {
@@ -28,14 +29,16 @@ const Hero = () => {
           <h1 className="font-primary font-black text-[35px] md:text-[50px] leading-tight"> <span className="text-[18px] md:text-[25px]"> Hello,</span> <br /> <span className="text-[24px] md:text-[30px]">I’m Sujon</span> <br /> <span className="text-primary" ref={el}>A Product Designer</span> </h1>
 
           <div className="flex gap-6 pt-5">
-            <a className="text-3xl text-white border-none outline-none cursor-pointer "><FaInstagramSquare/></a>
-            <a href="https://www.linkedin.com/in/sujon-biswas-934a8b37a/" className="text-3xl text-white border-none outline-none cursor-pointer"><FaLinkedin/></a>
-            <a className="text-3xl text-white border-none outline-none cursor-pointer"><FaFacebook/></a>
+            <a href="https://www.instagram.com/sujonbiswasdev" className="text-3xl text-white border-none outline-none cursor-pointer "><FaInstagramSquare/></a>
+            <a href="https://www.linkedin.com/in/sujon-biswas-934a8b37a/" className="text-3xl text-white border-none outline-none cursor-pointer">
+            <FaLinkedin/></a>
+            <a href="https://www.facebook.com/sujonbiswas2025/" className="text-3xl text-white border-none outline-none cursor-pointer"><FaFacebook/></a>
           </div>
 
           <div className="py-14 flex gap-5">
-            <Button className="bg-[#FD6F00] text-white font-bold font-primary text-[20px] py-3 px-10 ">Hire Me</Button>
-            <Button variant="bordered" className="text-white" > <a href="/images/HeroImg.png" download>Downlead CV</a> </Button>
+            <a className="bg-[#FD6F00] text-white font-bold font-primary text-[20px] py-1 px-6 rounded-xl" href="https://shorturl.at/Vv1bI">Hire Me</a>
+            <a className="border border-[#FD6F00] text-white font-bold font-primary text-[20px] py-1 px-6 rounded-xl" href="https://shorturl.at/Vv1bI">Hire Me</a>
+
 
           </div>
 
