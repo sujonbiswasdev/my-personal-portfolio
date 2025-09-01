@@ -7,10 +7,16 @@ import Preloader from "./components/PreloaderPage/Preloader";
 function App() {
   const [preloader, setpreloader] = useState(true);
  window.addEventListener('load',()=>{
-  setpreloader(false);
-  console.log("false ")
+  const s=setpreloader(false);
+  if(s){
+    console.log("false ")
+  }
+  else{
+    console.log('true')
+  }
+  
  })
- console.log("true")
+ 
   return (
     <>
       {preloader ? (
