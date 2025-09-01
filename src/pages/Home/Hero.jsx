@@ -37,7 +37,7 @@ const Hero = () => {
 
           <div className="py-14 flex gap-5">
             <a className="bg-[#FD6F00] text-white font-bold font-primary text-[20px] py-1 px-6 rounded-xl" href="https://shorturl.at/Vv1bI">Hire Me</a>
-            <a className="border border-[#FD6F00] text-white font-bold font-primary text-[20px] py-1 px-6 rounded-xl" href="https://shorturl.at/Vv1bI">Hire Me</a>
+            <a className="border border-[#FD6F00] text-white font-bold font-primary text-[20px] py-1 px-6 rounded-xl" href="https://shorturl.at/Vv1bI">Order Now</a>
 
 
           </div>
