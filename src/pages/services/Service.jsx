@@ -9,7 +9,6 @@ const Service = () => {
       setSvdata(response.data)
      })
   },[])
-  console.log(SVData)
   return (
     <>
     <Container className="pt-0 md:pt-[10px] px-14 bg-black md:px-[80px]">

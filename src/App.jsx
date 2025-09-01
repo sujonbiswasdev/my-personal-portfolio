@@ -8,7 +8,9 @@ function App() {
   const [preloader, setpreloader] = useState(true);
  window.addEventListener('load',()=>{
   setpreloader(false);
+  console.log("false ")
  })
+ console.log("true")
   return (
     <>
       {preloader ? (
