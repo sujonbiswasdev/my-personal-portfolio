@@ -17,7 +17,7 @@ const Index = () => {
       <Route path='/Service' element={<Service/>} />
       <Route path='/skills' element={<Skills/>} />
       <Route path='/works' element={<Portfolio/>} />
-      <Route path='*' element={<Error/>} />
+      <Route path='/*' element={<Error/>} />
     </Routes>
     </BrowserRouter>
     </>
