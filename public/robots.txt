@@ -1,4 +1,4 @@
 User-agent:*
 Disallow:/admin/
 Allow:/
-sitemap:http://localhost:5173/sitemap.xml
+sitemap:https://sujonbiswasdev.vercel.app/sitemap.xml
