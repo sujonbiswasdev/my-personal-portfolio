@@ -4,7 +4,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import Typed from 'typed.js';
 import React from "react";
-import { Button } from "@heroui/react";
+import { FaYoutube } from "react-icons/fa6";
+
 
 const Hero = () => {
    const el = React.useRef(null);
@@ -33,6 +34,7 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/sujon-biswas-934a8b37a/" className="text-3xl text-white border-none outline-none cursor-pointer">
             <FaLinkedin/></a>
             <a href="https://www.facebook.com/sujonbiswas2025/" className="text-3xl text-white border-none outline-none cursor-pointer"><FaFacebook/></a>
+            <a className="text-3xl text-white border-none outline-none cursor-pointer" href="https://www.youtube.com/@nextgenprogrammer01"> <FaYoutube/> </a>
           </div>
 
           <div className="py-14 flex gap-5">
