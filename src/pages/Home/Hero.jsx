@@ -54,7 +54,7 @@ const Hero = () => {
 
             </div>
             <div className="border-r-2 border-gray-600 pr-1">
-                <h2 className="text-primary font-extrabold text-[24px] font-primary">80+</h2>
+                <h2 className="text-primary font-extrabold text-[24px] font-primary">8+</h2>
                 <h3 className="text-[20px] font-bold w-[150px] ">Happy Clients</h3>
 
             </div>
