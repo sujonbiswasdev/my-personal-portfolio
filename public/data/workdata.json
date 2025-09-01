@@ -3,7 +3,7 @@
 
     {"id":2,"heading":"disasters","des":"this is project disasters","technology":["React js","tailwind css","javascript"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/DISASTERS-I-O-website","img":"/images/project2.png","link":"https://disasters-website.vercel.app/"},
 
-    {"id":3,"heading":"May pay website","des":"this is maypay project","technology":["React js","tailwind css","next js","typescript"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/full-stack-project","img":"/images/project6.png","link":"https://full-stack-project-xvkb.vercel.app/"},
+    {"id":3,"heading":"May pay website","des":"this is maypay project","technology":["next js","tailwind css","typescript"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/full-stack-project","img":"/images/project6.png","link":"https://full-stack-project-xvkb.vercel.app/"},
 
     {"id":4,"heading":"Dashboard","des":"a website intarective dashboard","technology":["React js","tailwind css","chat js"],"library":["hero ui"],"url":"https://github.com/sujonbiswas01/Dashboard","img":"/images/project3.png","link":"https://dashboard-rust-tau.vercel.app/"},
     {"id":5,"heading":"landing page","des":"this is landing page","technology":["React js","tailwind css"],"library":["hero ui"],"url":"https://github.com/sujonbiswasdev/Real-state-project","img":"/images/real-state.png","link":"https://real-state-project-inky.vercel.app/"}
